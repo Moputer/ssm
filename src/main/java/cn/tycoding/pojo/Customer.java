@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 /**
  * 客户信息的JavaBean
- * @author tycoding
- * @date 18-4-7下午7:27
+ * @author Moputer
+ * @date 19-5-7下午9:09
  */
 public class Customer implements Serializable {
 

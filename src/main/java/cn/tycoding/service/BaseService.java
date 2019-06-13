@@ -5,8 +5,8 @@ import java.util.List;
 /**
  * 通用的Service层接口
  *
- * @auther TyCoding
- * @date 2018/9/28
+ * @author Moputer
+ * @date 19-5-7下午9:09
  */
 public interface BaseService<T> {
 

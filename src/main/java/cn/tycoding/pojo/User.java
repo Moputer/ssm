@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 /**
  * 这是用户登录的JavaBean
- * @author tycoding
- * @date 18-4-7下午7:28
+ * @author Moputer
+ * @date 19-5-7下午9:09
  */
 public class User implements Serializable {
 

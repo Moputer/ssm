@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * 用户的控制层
  *
- * @author tycoding
- * @date 18-4-7下午9:00
+ * @author Moputer
+ * @date 19-5-7下午9:09
  */
 @Controller
 @RequestMapping("/user")

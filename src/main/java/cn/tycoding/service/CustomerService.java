@@ -4,8 +4,8 @@ import cn.tycoding.pojo.Customer;
 import cn.tycoding.pojo.PageBean;
 
 /**
- * @author tycoding
- * @date 18-4-14下午9:13
+ * @author Moputer
+ * @date 19-5-7下午9:09
  */
 public interface CustomerService extends BaseService<Customer> {
 

@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author TyCoding
- * @date 18-3-10下午12:47
+ * @author Moputer
+ * @date 19-5-7下午9:09
  */
 public class PageBean<T> implements Serializable {
 

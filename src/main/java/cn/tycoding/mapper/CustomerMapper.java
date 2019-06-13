@@ -4,8 +4,8 @@ import cn.tycoding.pojo.Customer;
 import com.github.pagehelper.Page;
 
 /**
- * @author tycoding
- * @date 18-4-14下午9:14
+ * @author Moputer
+ * @date 19-5-7下午9:09
  */
 public interface CustomerMapper {
 

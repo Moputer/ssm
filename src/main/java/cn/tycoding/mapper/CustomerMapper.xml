@@ -61,13 +61,13 @@
         </if>
     </select>
 
-    <!--&lt;!&ndash; 分页查询 &ndash;&gt;-->
-    <!--<select id="findByPage" parameterType="Map" resultMap="BaseResultMap">-->
-        <!--select * from customer-->
-        <!--<if test="start != null and size != null">-->
-            <!--limit #{start},#{size}-->
-        <!--</if>-->
-    <!--</select>-->
+    <!-- 分页查询 -->
+    <select id="findByPage" parameterType="Map" resultMap="BaseResultMap">
+        select * from customer
+        <if test="start != null and size != null">
+            limit #{start},#{size}
+        </if>
+    </select>
 
     <!--&lt;!&ndash; 多条件查询 &ndash;&gt;-->
     <!--<select id="findCondition" parameterType="Map" resultMap="BaseResultMap">-->

@@ -1,12 +1,4 @@
 
-# 手把手教你入门SSM框架开发
-
-关于SSM框架环境搭建，请点击这里前往我的博客：[SSM框架整合之环境搭建](http://tycoding.cn/2018/06/04/ssm/)
-由于本项目采用了maven，关于IDEA搭建maven项目过程请点击这里前往我的博客：[maven起步](http://tycoding.cn/2018/06/01/maven/)
-
-**如果觉得不错就点击右上角star鼓励一下作者吧！**
-
-# 关于项目
 
 ## 测试环境
 
@@ -23,40 +15,11 @@
 3. 实现分页查询功能（使用PageHelper分页插件实现）
 ```
 
-## 项目结构
-
-```
-.
-├── README.md 
-├── img  -- 放了一些README.md文档所需要的图片，没有实际意义
-├── pom.xml
-└── src
-    └── main
-        ├── java
-        │   └── cn
-        │       └── tycoding
-        │           ├── controller  -- SpringMVC-WEB层控制器
-        │           ├── mapper  -- Mybatis接口和映射文件。本项目采用了mybatis的接口开发，所以接口和映射文件放在同一目录下，并且名称相同。
-        │           ├── pojo  -- JavaBean实体类
-        │           └── service  -- service业务层
-        ├── resources  -- maven项目存放配置文件的根目录(classpath:)
-        │   ├── sys_schema.sql  -- 项目数据库创建和表创建的SQL语句
-        │   ├── resource  -- 日志打印和数据源配置文件
-        │   └── spring  -- spring和springmvc的配置文件
-        └── webapp  -- 项目的根目录
-            ├── WEB-INF
-            ├── fonts  -- 字体的配置文件
-            └── lib  -- 前端静态资源
-```
-
 ## 整合思路
-继上一篇博文：[Spring MVC起步](http://tycoding.cn/2018/05/29/Spring-5/)其实我们已经了解了如何整合Spring和Spring MVC框架。那么，接下来我们就需要了解如何在此基础上整合Mybatis框架。
-首先须知Mybatis框架是一个持久层框架，而Spring MVC是WEB层框架，Spring框架则充当着业务层的角色。那么将三者联系起来正好组成了`web--service--dao`的三层架构体系。那么整合思路就如下所示了：
-    
+Mybatis框架是一个持久层框架，而Spring MVC是WEB层框架，Spring框架则充当着业务层的角色。那么将三者联系起来正好组成了`web--service--dao`的三层架构体系。那么整合思路就如下所示了：
 1. 整合dao(即mapper)，实现Mybatis和Spring的整合
 2. 整合service，由Spring管理service接口，在service中可以调用dao（mapper）
 3. 整合web（controller），实现Spring MVC和Spring的整合，在controller中调用service
-
 
 
 # 需求实现
@@ -634,38 +597,3 @@ public interface CustomerService extends BaseService<Customer> {
 
 ****
 
-
-
-# 综上
-
-到此为止，我们基本讲完了SSM框整合的过程，你是否看明白了呢？其实整合SSM框架并不难，按照这个思路，我们学习完SSM框架整合，就可以着手练习一些小项目了。详细过程，大家可以从我的项目源码中分析。
-
-
-
-# 项目运行截图
-
-![](img/img-1.png)
-
-
-
-![](img/img-2.png)
-
-
-
-![](img/img-3.png)
-
-<br/>
-
-# 交流
-
-如果大家有兴趣，欢迎大家加入我的Java交流群：671017003 ，一起交流学习Java技术。博主目前一直在自学JAVA中，技术有限，如果可以，会尽力给大家提供一些帮助，或是一些学习方法，当然群里的大佬都会积极给新手答疑的。所以，别犹豫，快来加入我们吧！
-
-<br/>
-
-# 联系
-
-If you have some questions after you see this article, you can contact me or you can find some info by clicking these links.
-
-- [Blog@TyCoding's blog](http://www.tycoding.cn)
-- [GitHub@TyCoding](https://github.com/TyCoding)
-- [ZhiHu@TyCoding](https://www.zhihu.com/people/tomo-83-82/activities)
